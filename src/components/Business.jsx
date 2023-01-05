@@ -20,7 +20,10 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () =>  (
   <section id="features" className={layout.section}>
-    <div className={layout.sectionInfo}>
+    <div
+     data-aos='fade-down'
+     data-aos-delay='500'
+     className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
       AI自動翻訳 <br className="sm:block hidden" />「T-4OO」とは
       </h2>
@@ -32,7 +35,10 @@ const Business = () =>  (
 
     </div>
 
-    <div className={`${layout.sectionImg} flex-col`}>
+    <div 
+     data-aos='fade-up'
+     data-aos-delay='500'
+    className={`${layout.sectionImg} flex-col`}>
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}

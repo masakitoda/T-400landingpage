@@ -9,6 +9,8 @@ module.exports = {
                 primary1: "white",
                 secondary: "#12627a",
                 dimBlack: "black",
+                blue:"#0000A5",
+                red:"#D2122E",
                 dimWhite: "rgba(255, 255, 255, 0.7)",
                 dimBlue: "rgba(9, 151, 124, 0.1)",
             },

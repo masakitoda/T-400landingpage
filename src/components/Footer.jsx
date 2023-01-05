@@ -6,7 +6,7 @@ import ScrollToTop from "react-scroll-to-top";
 const Footer = () => (
   
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
-    <ScrollToTop smooth top="20" />
+    <ScrollToTop smooth top="20" width="40px" className="items-center" />
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
       
@@ -28,14 +28,15 @@ const Footer = () => (
               {footerlink.title}
             </h4>
             <ul className="list-none mt-4">
-              {footerlink.links.map((link, index) => (
+              {footerlink.links.map((links, index) => (
                 <li
-                  key={link.name}
+                  key={links.link}
                   className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
+                  onClick={() => window.open(links.link)}
                 >
-                  {link.name}
+                  {links.name}
                 </li>
               ))}
             </ul>

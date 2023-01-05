@@ -2,6 +2,7 @@
  import React, { useRef } from "react";
  import emailjs from "@emailjs/browser";
  import Result from "./Result";
+ import Policy from "./Policy";
  import {useState}  from 'react';
 
  
@@ -24,7 +25,7 @@ const Contact = () => {
       };
       //message alllert
       const[result,showResult] = useState(false);
-  
+      
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -54,12 +55,16 @@ const Contact = () => {
       return (
         <section id="contact" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+      
           <h2 className={styles.heading2}>
           <span className="text-black">使いやすく</span> <br className="sm:block hidden" /> <span className="text-black">スピーディー</span>
           </h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5 text-black`}>
           クラウドアプリケーションなのでインストール不要。文章以外にPDF・Word・Excel・PowerPoint等の形式に対応。ドラッグ＆ドロップでファイルを丸ごと、レイアウトそのままで翻訳。WebサイトもURLを入力するだけでレイアウトそのままに翻訳。翻訳後の画面でリンクをクリックするとリンク先も自動翻訳。
-          </p>
+          </p><br className="sm:block flex" />{" "}
+      <div>
+        <Policy />
+      </div>
           </div>
         <div  className={`flex-1 flex ${styles.flexRight} md:my-0 my-10 relative`}>
         {/* <div className="relative flex flex-col justify-right min-h-screen overflow-hidden"> */}
@@ -205,7 +210,7 @@ const Contact = () => {
                 </label>
               </div>
               <input type="checkbox" id="agree" onChange={checkboxHandler} />
-          <label htmlFor="agree"> I agree to <b>terms and conditions</b></label>
+          <label htmlFor="agree"> プライバシーポリシーに <b>同意します。</b></label>
           <br className="sm:block flex" />{" "}
           <br className="sm:block flex" />{" "}
               <div class="mb-6">

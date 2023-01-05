@@ -1,8 +1,8 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
 export const navLinks = [{
-        id: "home",
-        title: "トップ",
+    id: "contact",
+    title: "資料請求",
     },
     {
         id: "features",
@@ -17,8 +17,8 @@ export const navLinks = [{
         title: "導入実績",
     },
     {
-        id: "contact",
-        title: "資料請求",
+        id: "home",
+        title: "トップ",
     },
 ];
 
@@ -45,21 +45,21 @@ export const features = [{
 
 export const feedback = [{
         id: "feedback-1",
-        content: "2019年からの新たなグローバル経営方針のもと、社内の翻訳需要が爆発的に増加。全部門で活用できる自動翻訳が求められる中、コストとセキュリティ面を重視して「T-4OO」の導入を決定、外国語業務のリードタイムを劇的に短縮。",
+        content: "多くのグループ会社でテキスト翻訳のみの別サービスを利用しているが、複雑な文書のファイル翻訳や高い精度を 求める翻訳作業にコストと時間がかかっていた。 「セキュリティの安全さ、大幅な翻訳コスト削減と作業時間短縮、グループ内の多岐にわたるビジネス分野に対応する 豊富な辞書とAI学習デ－タによる高い翻訳精度から、今では多くのグループ会社がT-4OOを利用しています。」",
         name: "オリンパス株式会社",
         title: "Founder & Leader",
         img: people01,
     },
     {
         id: "feedback-2",
-        content: "旭化成グループ全体でAI自動翻訳「T-4OO」を導入。これまで海外窓口に頼っていた海外メンバーとのやりとりを実務担当者が直接進められるようになるなど、外国語にまつわる業務の効率化に成功。",
+        content: "業務上英文の資料を読むことが多かったが、医薬品の専門用語が従来の翻訳サービスではうまく翻訳されず、膨大な資料の中から必要な情報を見つけ出すのに時間がかかっていた。「2000分野ある専門分野の辞書には医療系という大きな括りではなく、放射線治療、生体計測等細かく分かれているため本当にその制度の高さに助かっています。」",
         name: "旭化成株式会社",
         title: "Founder & Leader",
         img: people02,
     },
     {
         id: "feedback-3",
-        content: "翻訳精度が高く、英文契約書の確認や作成の時間は1/5に。PDFファイルをそのまま翻訳できるので海外情報の確認がスムーズになりリサーチ業務の成果につなげている。",
+        content: "本社から送られてくるマニュアル等の資料を、文章に変換してから翻訳し、それをまたレイアウトを整えて資料化するといった作業に、翻訳業務に加えて資料の再作成と二度手間な業務が増えていた。「T-4OOならOfficeファイルだけでなくPDFファイルもレイアウトを変えずにそのまま翻訳してくれるので、もう手放せないくらい無くてはならないものになりました」",
         name: "中山国際法律事務所",
         title: "Founder & Leader",
         img: people03,
@@ -86,24 +86,20 @@ export const stats = [{
 export const footerLinks = [{
         title: "Useful Links",
         links: [{
-                name: "Content",
-                link: "https://www.valueplan.jp/",
+                name: "会社概要",
+                link: "https://www.valueplan.jp/company.html",
             },
             {
-                name: "How it Works",
-                link: "https://www.valueplan.jp/",
+                name: "事業内容",
+                link: "https://www.valueplan.jp/service.html",
             },
             {
-                name: "Create",
-                link: "https://www.valueplan.jp/",
+                name: "採用情報",
+                link: "https://www.valueplan.jp/saiyo.html",
             },
             {
-                name: "Explore",
-                link: "https://www.valueplan.jp/",
-            },
-            {
-                name: "Terms & Services",
-                link: "https://www.valueplan.jp/",
+                name: "個人情報保護方針",
+                link: "https://www.valueplan.jp/privacypolicy.html",
             },
         ],
     },
