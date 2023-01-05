@@ -15,7 +15,10 @@ const Download = () => (
       <Button styles={`mt-10`} />
     </div>
     <div className={layout.sectionImg}>
-      <img src={download} alt="billing" className="w-[100%] h-[100%]" />
+      <img
+      data-aos='fade-left'
+      data-aos-delay='600' 
+       src={download} alt="billing" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );

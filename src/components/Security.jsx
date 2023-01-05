@@ -5,7 +5,10 @@ import Button from "./Button";
 const Security = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <img src={security} alt="security" className="w-[100%] h-[100%] relative z-[5]" />
+      <img
+      data-aos='fade-right'
+      data-aos-delay='600' 
+       src={security} alt="security" className="w-[100%] h-[100%] relative z-[5]" />
 
       {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

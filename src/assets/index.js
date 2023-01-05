@@ -27,12 +27,14 @@ import ai from "./ai.jpg";
 import security from "./security.jpg";
 import download from "./download.jpeg";
 import back from "./sf-04.png";
+import VPAI from "./VPAI2.png";
 
 export {
     airbnb,
     back,
     security,
     bill,
+    VPAI,
     download,
     binance,
     card,
